@@ -150,35 +150,35 @@ void executeCommand(recivedLine *recivedLine, mat **arr){
     switch (recivedLine->cmdIDX){
         case READ_MAT:
             vals[16] = atof(recivedLine->operandsValues[1]); 
-            read_mat(&mat1, vals);
+            read_mat(mat1, vals);
             break;
         case PRINT_MAT:
-            print_mat(&mat1);
+            print_mat(mat1);
             break;
         case ADD_MAT:
             mat2 = arr[recivedLine->operandsValues[1][0] - 'A'];
             mat3 = arr[recivedLine->operandsValues[2][0] - 'A']; 
-            add_mat(&mat1, &mat2, &mat3);
+            add_mat(mat1, mat2, mat3);
             break;
         case SUB_MAT:
             mat2 = arr[recivedLine->operandsValues[1][0] - 'A'];
             mat3 = arr[recivedLine->operandsValues[2][0] - 'A'];            
-            sub_mat(&mat1, &mat2, &mat3);
+            sub_mat(mat1, mat2, mat3);
             break;
         case MUL_MAT:
             mat2 = arr[recivedLine->operandsValues[1][0] - 'A'];
             mat3 = arr[recivedLine->operandsValues[2][0] - 'A'];             
-            mul_mat(&mat1, &mat2, &mat3);
+            mul_mat(mat1, mat2, mat3);
             break;
         case MUL_SCALAR:
             scalar = atof(recivedLine->operandsValues[2]);
             mat2 = arr[recivedLine->operandsValues[1][0] - 'A']; 
-            mul_scalar(&mat1, scalar, &mat2);
+            mul_scalar(mat1, scalar, mat2);
             break;
         case TRANS_MAT:
             mat2 = arr[recivedLine->operandsValues[1][0] - 'A'];
             mat3 = arr[recivedLine->operandsValues[2][0] - 'A']; 
-            trans_mat(&mat1, &mat2);
+            trans_mat(mat1, mat2);
             break;
         case STOP:
             break;

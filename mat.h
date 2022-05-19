@@ -11,7 +11,8 @@
 #define NUM_OF_MATS 6
 
 typedef struct mat{
-    float matrix[MAT_SIZE][MAT_SIZE];
+	char name[MAT_NAME_LEN];
+    double matrix[MAT_SIZE][MAT_SIZE];
 }mat;
 
 /*
@@ -24,7 +25,7 @@ typedef struct mat{
 
 void welcome_massage();
 
-void init_mat(mat *mat);
+void init_mata(mat mat[]);
 
 /*
 This function copies the first matrix into the second.
@@ -39,7 +40,7 @@ nedded, it takes only the first values. in case there are less values then neede
 @param mat1 - the matrix that beeing filled
 @param values[] - a list of values to fill the matrix with.
 */
-void read_mat(mat *mat1 ,float values[]);
+void read_mat(mat *mat1 ,double values[]);
 
 /*
 This function prints the given matrix ordinarly

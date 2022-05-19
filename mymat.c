@@ -12,23 +12,21 @@ int main(){
     mats[5]=MAT_F;
 
     welcome_massage();
-    for(i=0; i<NUM_OF_MATS; i++){
-        init_mat(&mats[i]);
-    }
+    init_mats(mats);
     for(i=0; i<NUM_OF_MATS; i++){
         print_mat(&mats[i]);
     }
-float val[16] = {1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6};
+double val[16] = {1,2,3,4,5,6,7,8,9,0,1,2,3,4,5,6};
 read_mat(&mats[1],val);
-print_mat(&mats[1]);
 
-float val2[16] = {0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5};
+double val2[16] = {0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5};
 read_mat(&mats[2],val2);
-print_mat(&mats[2]);
 
 add_mat(&mats[1], &mats[2], &mats[3]);
 sub_mat(&mats[1], &mats[2], &mats[3]);
 mul_scalar(&mats[2], 2, &mats[3]);
+trans_mat(&mats[1],&mats[0]);
+mul_mat(&mats[1], &mats[3],&mats[5]);
 
     /* FOREVER */
     /*     executeCommand(); */
