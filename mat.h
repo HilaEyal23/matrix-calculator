@@ -15,14 +15,6 @@ typedef struct mat{
     double matrix[MAT_SIZE][MAT_SIZE];
 }mat;
 
-/*
-typedef double matrix[MAT_SIZE][MAT_SIZE];
-
-typedef struct mat{
-	char name[MAT_NAME_LEN];
-	matrix *matrix;
-} mat;*/
-
 void welcome_massage();
 
 void init_mata(mat mat[]);

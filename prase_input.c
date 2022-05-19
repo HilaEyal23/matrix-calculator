@@ -141,8 +141,8 @@ void printError(int errorType){
 
 /*to be fixed*/
 void executeCommand(recivedLine *recivedLine, mat **arr){
-  float vals[16]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
-  float scalar;
+  double vals[16]={0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+  double scalar;
   mat *mat1, *mat2, *mat3;
   
   if(isOperandsValid(recivedLine)){

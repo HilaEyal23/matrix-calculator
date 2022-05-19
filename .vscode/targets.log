@@ -1,4 +1,4 @@
-make.exe all -f c:\Users\hilae\OneDrive\openu\מדעי המחשב\מעבדה\mmn22\makefile --print-data-base --no-builtin-variables --no-builtin-rules --question
+make.exe all -f c:\Users\hilae\OneDrive\openu\CS\20465\mmn22\makefile --print-data-base --no-builtin-variables --no-builtin-rules --question
 'make.exe' is not recognized as an internal or external command,
 operable program or batch file.
 

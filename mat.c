@@ -111,7 +111,6 @@ void mul_mat(mat *mat1, mat *mat2, mat *mat3)
                 sum += mat1 -> matrix[i][k] * mat2 -> matrix[k][j];
             }
             tmp.matrix[i][j] = sum;
-            sum = 0;
         }
     }
     copy_mat(&tmp, mat3);
