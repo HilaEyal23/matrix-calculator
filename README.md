@@ -1,6 +1,8 @@
 # mmn22
 matrix calculator written in c
 
+>Our functions :
+
 `read_mat(mat ,values[])` - puts a given numberic values into the given matrix field according to order.
 
 `print_mat(mat)` - prints the given matrix.
