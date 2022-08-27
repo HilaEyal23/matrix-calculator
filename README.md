@@ -1,5 +1,5 @@
-# mmn22
-matrix calculator written in c
+# matrix-calculator
+**matrix calculator written in c**
 
 >Our functions :
 
