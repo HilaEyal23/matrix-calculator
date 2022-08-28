@@ -1,5 +1,8 @@
 # matrix-calculator
 **matrix calculator written in c**
+>About the calculator :
+
+This program parses a given txt file according to spesific syntax and executes it's commands (in case no errors found) otherwise it writes errors back to the user. 
 
 >Our functions :
 
@@ -18,3 +21,12 @@
 `trans_mat(mat1, mat2)` - puts in the second matrix the matrix transformation of first given matrix.
 
 `stop(void)` - stops the program 
+
+>Our matrixs :
+
+* MAT_A
+* MAT_B
+* MAT_C
+* MAT_D
+* MAT_E
+* MAT_F
